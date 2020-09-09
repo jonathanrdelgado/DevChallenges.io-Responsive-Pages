@@ -1,102 +1,119 @@
 @font-face {
-	font-family: Montserrat;
-	src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
-	font-family: Poppins;
-	src: url(../fonts/Poppins-Regular.ttf);
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
-	font-family: PTSerif;
-	src: url(../fonts/PTSerif-Regular.ttf);
+  font-family: PTSerif;
+  src: url(../fonts/PTSerif-Regular.ttf);
 }
 
 body {
-	margin: 0;
+  margin: 0;
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
 
 .container {
-	margin: 0 15%;
-	width: 70%;
+  margin: 0 15%;
+  width: 70%;
 }
 
 .about {
-	display: flex;
-	justify-content: center;
-	margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
 }
 
 .title {
-	width: 50%;
+  width: 50%;
 }
 
 .title-text {
-	font-family: PTSerif;
-	font-weight: bold;
-	font-size: 2.25em;
-	letter-spacing: -0.045em;
+  font-family: PTSerif;
+  font-weight: bold;
+  font-size: 2.25em;
+  letter-spacing: -0.045em;
 }
 
 .text {
-	width: 50%;
+  width: 50%;
 }
 
 .text-header {
-	font-family: Poppins;
-	font-weight: bold;
-	font-size: 1.125em;
-	line-height: 1.6875em;
-	text-transform: uppercase;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 1.125em;
+  line-height: 1.6875em;
+  text-transform: uppercase;
 }
 
 .text-description {
-	font-family: Poppins;
-	font-size: 1.125em;
+  font-family: Poppins;
+  font-size: 1.125em;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid:nth-of-type(even) .cell {
+  margin-top: 50px;
+}
+
+.cell {
+  flex: 0 0 33.3333%;
 }
 
 .footer {
-	bottom: 0;
-	height: 3em;
-	position: fixed;
-	width: 100%;
+  bottom: 0;
+  height: 3em;
+  position: fixed;
+  width: 100%;
 }
 
 .footer-text {
-	color: #a9a9a9;
-	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 0.875em;
-	line-height: 3em;
-	text-align: center;
+  color: #a9a9a9;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 0.875em;
+  line-height: 3em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
-	body {
-		font-size: 12px;
-	}
+  body {
+    font-size: 12px;
+  }
 
-	.container {
-		margin: 0 5%;
-		width: 90%;
-	}
+  .container {
+    margin: 0 5%;
+    width: 90%;
+  }
 
-	.about {
-		flex-direction: column;
-		margin-top: 0.5em;
-	}
+  .about {
+    flex-direction: column;
+    margin-top: 0.5em;
+  }
 
-	.title {
-		width: 100%;
-	}
+  .title {
+    width: 100%;
+  }
 
-	.text {
-		padding-top: 1em;
-		width: 100%;
-	}
+  .text {
+    padding-top: 1em;
+    width: 100%;
+  }
+
+  .cell {
+    flex: 0 0 50%;
+  }
 }
