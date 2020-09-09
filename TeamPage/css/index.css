@@ -65,8 +65,8 @@ p {
 	flex-wrap: wrap;
 }
 
-.grid:nth-of-type(even) .cell {
-	margin-top: 50px;
+.cell:nth-of-type(even) {
+	margin-top: 5em;
 }
 
 .cell {
@@ -78,15 +78,36 @@ p {
 	max-height: 40%;
 }
 
-.team-photo {
+.team-member-photo-title-container {
+	display: flex;
+}
+
+.team-member-photo {
+	flex-grow: 9;
 	width: 100%;
 	height: 100%;
+}
+
+.team-member-title {
+	flex-grow: 1;
+	font-family: PTSerif;
+	font-size: 0.75em;
+	line-height: 1em;
+	text-orientation: mixed;
+	text-transform: uppercase;
+	writing-mode: vertical-rl;
+}
+
+.team-member-name {
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 1.125em;
+	line-height: 1.6875em;
 }
 
 .footer {
 	bottom: 0;
 	height: 3em;
-	position: fixed;
 	width: 100%;
 }
 
@@ -125,5 +146,9 @@ p {
 
 	.cell {
 		flex: 0 0 50%;
+	}
+
+	.team-member-container {
+		padding: 1.5em;
 	}
 }
