@@ -1,0 +1,50 @@
+@font-face {
+	font-family: CrimsonPro;
+	src: url(../fonts/CrimsonPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: Lora;
+	src: url(../fonts/Lora-Regular.ttf);
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+body {
+	margin: 0;
+}
+
+.page {
+	background-color: #181719;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+}
+
+header {
+	flex-grow: 1;
+}
+
+.header-title {
+	border: solid 1px #ffffff;
+	display: inline-block;
+	font-family: CrimsonPro;
+	font-weight: 200;
+	font-size: 0.875;
+	line-height: 1em;
+	padding: 0.5em;
+	text-transform: uppercase;
+}
+
+.content {
+	flex-grow: 8;
+}
+
+footer {
+	flex-grow: 1;
+}
